@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Dashboard Project</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="big-container">
         <div id="sidebar-container">
-            <h2 id="dashboard">Dashboard</h2>
-            <ul id="sidebar-links">
-                <li><a href="/home.html" id="home">Home</a></li>
-                <li><a href="/profile.html" id="profile">Profile</a></li>
-                <li><a href="/messages.html" id="messages">Messages</a></li>
-                <li><a href="/history.html" id="history">History</a></li>
-                <li><a href="/tasks.html" id="tasks">Tasks</a></li>
-                <li><a href="/communities.html" id=communities">Communities</a></li>
-            </ul>
-            <ul id="sidebar-maintenance">
-                <li><a href="/settings.html" id="settings">Settings</a></li>
-                <li><a href="/support.html" id="support">Support</a></li>
-                <li><a href="/privacy.html" id="privacy">Privacy</a></li>
-            </ul>
+            <div id="dashboard">
+                <img src="icons/view-dashboard.png" height="50px">
+                <h2>Dashboard</h2>
+            </div>
+            <nav id="menu">
+                <a href="/home.html" id="home-link"><img src="icons/home-outline.png" class="icons" height="40px">Home</a>
+                <a href="/profile.html" id="profile-link"><img src="icons/account-circle-outline.png" class="icons" height="40px">Profile</a>    
+                <a href="/messages.html" id="messages-link"><img src="icons/message-outline.png" class="icons" height="40px">Messages</a>    
+                <a href="/history.html" id="history-link"><img src="icons/history.png" class="icons" height="40px">History</a>
+                <a href="/tasks.html" id="tasks-link"><img src="icons/calendar-check-outline.png" class="icons" height="40px">Tasks</a>   
+                <a href="/communities.html" id="communities-link"><img src="icons/account-group-outline.png" class="icons" height="40px">Communities</a>
+                <br>
+                <a href="/settings.html" id="settings-link"><img src="icons/cog-outline.png" class="icons" height="40px">Settings</a>
+                <a href="/support.html" id="support-link"><img src="icons/face-agent.png" class="icons" height="40px">Support</a>
+                <a href="/privacy.html" id="privacy-link"><img src="icons/key-outline.png" class="icons" height="40px">Privacy</a>
+            </nav>
         </div>
         <div id="header-container">
             <button type="btn" id="search-btn">Search</button>
             <input type="text" id="search">
+            <p><img src="icons/account-box-outline.png" height="75px" id="profile-avatar">Hello, username!</p>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
         <div id="main-content-container">
             <div id="projects-container">
-                <p>Your Projects</p>
                 <div class="card">
                     <p><strong>Project 1</strong></p>
                     <p>aio;hgua;irghi;akjrhgkj;dfg</p>
@@ -54,6 +62,8 @@
                     <p><strong>Money Maker</strong></p>
                     <p>ahdfkjadshfkjadhfgk;jadfhgk;adfhg;kadr</p>
                 </div>
+            </div>
+            <div id="right-side-container">
                 <div id="announcements-container">
                     <h3>Announcements</h3>
                     <div id="announcements-card">
@@ -68,7 +78,7 @@
                     </div>
                 </div>
                 <div id="trending-container">
-                    <h3>Trending/</h3>
+                    <h3>Trending</h3>
                     <div id="trending-card">
                         <ul>
                             <li>@username</li>
@@ -80,5 +90,7 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

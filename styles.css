@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Oxygen';
+    src: url('fonts/Oxygen-Bold.woff2') format('woff2'),
+        url('fonts/Oxygen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('fonts/Oxygen-Italic.woff2') format('woff2'),
+        url('fonts/Oxygen-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('fonts/Oxygen-BoldItalic.woff2') format('woff2'),
+        url('fonts/Oxygen-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('fonts/Oxygen.woff2') format('woff2'),
+        url('fonts/Oxygen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bubblegum Sans';
+    src: url('fonts/BubblegumSans-Regular.woff2') format('woff2'),
+        url('fonts/BubblegumSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #321168;
+}
+
+#big-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 90vh;
+    font-family: 'Oxygen';
+    gap: 15px;
+}
+
+#sidebar-container {
+    border: 2px solid #6CC998;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #252547;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard {
+    display: flex;
+    color: white;
+    font-size: 28px;
+    font-family: 'Bubblegum Sans';
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    align-items: left;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+#header-container {
+    border: 1px solid purple;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: lightpink;
+}
+
+#main-content-container {
+    border: 1px solid blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: lightgreen;
+}
+
+#projects-container {
+    border: 1px solid orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#right-side-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#announcements-container {
+    border: 1px solid pink;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+#sidebar-links {
+    height: 40%;
+    margin-bottom: 25px;
+}
+
+h2, h3 {
+    font-family: 'Bubblegum Sans', sans-serif;
+}
